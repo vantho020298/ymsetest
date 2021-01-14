@@ -1,0 +1,64 @@
+
+.main-content
+    background-color: #ffffff
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 22px
+    color: #969696
+
+    >.contents
+        display: flex
+
+        >.content
+            margin-right: 20px
+
+            >.header
+                margin-bottom: 20px
+
+                >.icon
+                    width: 40px
+                    margin-bottom: 10px
+
+                >.title
+                    font-weight: bold
+
+            >.body
+                >.contents-body
+                    display: flex
+                    flex-direction: column
+                    position: relative
+                    &:not(:last-child)
+                        margin-bottom: 10px
+
+        >.questions
+            width: 60%
+
+            .question-container
+                cursor: pointer
+                display: flex
+                align-items: center
+                justify-content: space-around
+                padding: 5px
+                border-bottom: 1px solid #aeaeae
+
+                >.text
+                    display: flex
+
+                    >.number
+                        font-size: 20px
+                        font-weight: bold
+        >.form
+            width: 40%
+
+@media (max-width: 767.98px)
+    .main-content
+        >.contents
+            flex-direction: column
+
+            >.questions
+                width: 100%
+
+            >.form
+                width: 100%
+                margin-top: 20px
